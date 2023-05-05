@@ -6,7 +6,6 @@ import project.model.Student;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.stream.Collectors;
 
@@ -33,18 +32,17 @@ public class StudentRepository {
 
     public String promoteSchool() {
         // keeping in mind, a student is not being readmitted, they're being promoted
-        // finding out students to be removed
-        Set<Student> graduatingStudents = school.get()
-                .stream()
-                .filter(student -> "12".equals(student.getClazz()))
-                .collect(Collectors.toSet());
 
-        // increasing the class level
-        school.get()
-                .forEach(student -> student.setClazz(String.valueOf(Long.parseLong(student.getClazz())+1)));
-
-        // removing graduating batch of students
-        school.get().removeAll(graduatingStudents);
+        school.set(
+                school.get()
+                        .stream()
+                        .filter(student -> !"12".equals(student.getClazz())) // removing graduating batch of students
+                        .map(student -> student.toBuilder() // increasing the class level
+                                .clazz(String.valueOf(Long.parseLong(student.getClazz())+1))
+                                .build()
+                        )
+                        .collect(Collectors.toList())
+        );
         return String.format("Students have been promoted for the year %s", LocalDate.now().getYear());
     }
 }
