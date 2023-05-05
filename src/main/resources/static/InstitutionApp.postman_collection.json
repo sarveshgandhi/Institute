@@ -1,99 +1,213 @@
 {
 	"info": {
-		"_postman_id": "993db008-02fd-4713-ad8c-93655321fd93",
+		"_postman_id": "c85dace9-2f43-482b-b012-12b5bc20cbaa",
 		"name": "InstitutionApp",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "admitStudents",
-			"request": {
-				"method": "POST",
-				"header": [],
-				"body": {
-					"mode": "formdata",
-					"formdata": [
-						{
-							"key": "file",
-							"type": "file",
-							"src": "/C:/Users/sarvgandhi/Desktop/Demp Project/students.json"
+			"name": "ProdEnv",
+			"item": [
+				{
+					"name": "Admit batch of students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/sarvgandhi/Desktop/Fri May  5 13-45-59 2023/{{My Documents}}/GitHub/Institute/src/main/resources/templates/students.json"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{INSTITUTE_PROD}}/admitBatch",
+							"host": [
+								"{{INSTITUTE_PROD}}"
+							],
+							"path": [
+								"admitBatch"
+							]
 						}
-					],
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
+					},
+					"response": []
 				},
-				"url": {
-					"raw": "http://localhost:8080/admitBatch",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"admitBatch"
-					],
-					"query": [
-						{
-							"key": "file",
-							"value": "abc",
-							"disabled": true
+				{
+					"name": "getStrengthOfSchool",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{INSTITUTE_PROD}}/strength/school",
+							"host": [
+								"{{INSTITUTE_PROD}}"
+							],
+							"path": [
+								"strength",
+								"school"
+							]
 						}
-					]
+					},
+					"response": []
+				},
+				{
+					"name": "getStrengthOfClass",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{INSTITUTE_PROD}}/strength/class/6",
+							"host": [
+								"{{INSTITUTE_PROD}}"
+							],
+							"path": [
+								"strength",
+								"class",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promote All Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{INSTITUTE_PROD}}/promote",
+							"host": [
+								"{{INSTITUTE_PROD}}"
+							],
+							"path": [
+								"promote"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
 		},
 		{
-			"name": "getStrengthOfSchool",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/strength/school",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"strength",
-						"school"
-					]
+			"name": "LocalEnv",
+			"item": [
+				{
+					"name": "Admit batch of students",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/C:/Users/sarvgandhi/Desktop/Fri May  5 13-45-59 2023/{{My Documents}}/GitHub/Institute/src/main/resources/templates/students.json"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{localhost}}/admitBatch",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"admitBatch"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStrengthOfSchool",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/strength/school",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"strength",
+								"school"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getStrengthOfClass",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/strength/class/6",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"strength",
+								"class",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Promote All Students",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{localhost}}/promote",
+							"host": [
+								"{{localhost}}"
+							],
+							"path": [
+								"promote"
+							]
+						}
+					},
+					"response": []
 				}
-			},
-			"response": []
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
 		},
 		{
-			"name": "getStrengthOfClass",
-			"request": {
-				"method": "GET",
-				"header": [],
-				"url": {
-					"raw": "http://localhost:8080/strength/class/6",
-					"protocol": "http",
-					"host": [
-						"localhost"
-					],
-					"port": "8080",
-					"path": [
-						"strength",
-						"class",
-						"6"
-					]
-				}
-			},
-			"response": []
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "INSTITUTE_PROD",
+			"value": "http://institute-production.up.railway.app",
+			"type": "default"
 		},
 		{
-			"name": "Promote All Students",
-			"request": {
-				"method": "GET",
-				"header": []
-			},
-			"response": []
+			"key": "localhost",
+			"value": "http://localhost:8080",
+			"type": "default"
 		}
 	]
 }
