@@ -1,0 +1,476 @@
+[
+  {
+    "Email": "Cullen@deangelo.ca",
+    "Full Name": "Sydnie Littel",
+    "Enrollment Number": 1,
+    "Class": 1
+  },
+  {
+    "Email": "Jerrell_Gerhold@rubie.tv",
+    "Full Name": "Ms. Ferne Fay",
+    "Enrollment Number": 2,
+    "Class": 1
+  },
+  {
+    "Email": "Linwood@alisha.io",
+    "Full Name": "Eleazar Legros",
+    "Enrollment Number": 3,
+    "Class": 1
+  },
+  {
+    "Email": "Antonietta@elta.name",
+    "Full Name": "Delphine Orn",
+    "Enrollment Number": 4,
+    "Class": 1
+  },
+  {
+    "Email": "Aletha_Jast@kayleigh.org",
+    "Full Name": "Assunta Mueller",
+    "Enrollment Number": 5,
+    "Class": 1
+  },
+  {
+    "Email": "Tevin.Davis@buddy.org",
+    "Full Name": "Abdul Satterfield",
+    "Enrollment Number": 6,
+    "Class": 1
+  },
+  {
+    "Email": "Hassan@jules.name",
+    "Full Name": "Stephania Schuster",
+    "Enrollment Number": 7,
+    "Class": 1
+  },
+  {
+    "Email": "Jaleel@makayla.info",
+    "Full Name": "Mr. Bettye Crist",
+    "Enrollment Number": 8,
+    "Class": 1
+  },
+  {
+    "Email": "Gaylord.Lubowitz@toby.io",
+    "Full Name": "Melyssa Kuhlman",
+    "Enrollment Number": 9,
+    "Class": 2
+  },
+  {
+    "Email": "Neal@van.biz",
+    "Full Name": "Dante Walter",
+    "Enrollment Number": 10,
+    "Class": 2
+  },
+  {
+    "Email": "Alice@gerardo.org",
+    "Full Name": "Aimee Parisian",
+    "Enrollment Number": 11,
+    "Class": 2
+  },
+  {
+    "Email": "Concepcion.Wolff@jamil.org",
+    "Full Name": "Lauretta Leannon II",
+    "Enrollment Number": 12,
+    "Class": 3
+  },
+  {
+    "Email": "Alejandrin_Hand@destiny.name",
+    "Full Name": "Laurine Wehner",
+    "Enrollment Number": 13,
+    "Class": 3
+  },
+  {
+    "Email": "Ova@ottilie.tv",
+    "Full Name": "Michael Mertz",
+    "Enrollment Number": 14,
+    "Class": 3
+  },
+  {
+    "Email": "Jevon@kailee.ca",
+    "Full Name": "Ed Nikolaus",
+    "Enrollment Number": 15,
+    "Class": 3
+  },
+  {
+    "Email": "Dewayne_Medhurst@kristoffer.ca",
+    "Full Name": "Summer Weissnat DVM",
+    "Enrollment Number": 16,
+    "Class": 3
+  },
+  {
+    "Email": "Colton@leone.co.uk",
+    "Full Name": "Claire Towne",
+    "Enrollment Number": 17,
+    "Class": 3
+  },
+  {
+    "Email": "Josianne@rex.co.uk",
+    "Full Name": "Oswald Kulas",
+    "Enrollment Number": 18,
+    "Class": 3
+  },
+  {
+    "Email": "Electa_Bosco@destinee.us",
+    "Full Name": "Suzanne Hodkiewicz",
+    "Enrollment Number": 19,
+    "Class": 3
+  },
+  {
+    "Email": "Christelle@orlando.net",
+    "Full Name": "Antone Kunde",
+    "Enrollment Number": 20,
+    "Class": 3
+  },
+  {
+    "Email": "Gretchen_Rowe@sabrina.biz",
+    "Full Name": "Alaina Kub",
+    "Enrollment Number": 21,
+    "Class": 4
+  },
+  {
+    "Email": "Josiah_Bogisich@griffin.net",
+    "Full Name": "Quentin Schaden",
+    "Enrollment Number": 22,
+    "Class": 4
+  },
+  {
+    "Email": "Delaney@tyrell.biz",
+    "Full Name": "Newton Altenwerth",
+    "Enrollment Number": 23,
+    "Class": 4
+  },
+  {
+    "Email": "Stanton_Rosenbaum@tierra.biz",
+    "Full Name": "Korey Rowe III",
+    "Enrollment Number": 24,
+    "Class": 4
+  },
+  {
+    "Email": "Clara@pearline.biz",
+    "Full Name": "Mackenzie Mertz",
+    "Enrollment Number": 25,
+    "Class": 4
+  },
+  {
+    "Email": "Cassandra.Cremin@armando.net",
+    "Full Name": "Miss Betsy Ward",
+    "Enrollment Number": 26,
+    "Class": 4
+  },
+  {
+    "Email": "Zul_Carroll@arlene.tv",
+    "Full Name": "Earl Konopelski",
+    "Enrollment Number": 27,
+    "Class": 5
+  },
+  {
+    "Email": "Yadira.Nicolas@rachel.tv",
+    "Full Name": "Ayla White",
+    "Enrollment Number": 28,
+    "Class": 5
+  },
+  {
+    "Email": "Jerad_Kling@jesse.net",
+    "Full Name": "London Walker",
+    "Enrollment Number": 29,
+    "Class": 5
+  },
+  {
+    "Email": "Bryana.Rath@brandyn.us",
+    "Full Name": "Miss Elinore Dibbert",
+    "Enrollment Number": 30,
+    "Class": 5
+  },
+  {
+    "Email": "Sibyl@daphnee.info",
+    "Full Name": "Seamus Nicolas V",
+    "Enrollment Number": 31,
+    "Class": 5
+  },
+  {
+    "Email": "Alfredo_Welch@amina.biz",
+    "Full Name": "Harley Muller",
+    "Enrollment Number": 32,
+    "Class": 5
+  },
+  {
+    "Email": "Elliott.Christiansen@jaiden.biz",
+    "Full Name": "Moises Parker Sr.",
+    "Enrollment Number": 33,
+    "Class": 6
+  },
+  {
+    "Email": "Stanley@emiliano.com",
+    "Full Name": "Susan Shanahan II",
+    "Enrollment Number": 34,
+    "Class": 6
+  },
+  {
+    "Email": "Arlene.Bartell@mariah.tv",
+    "Full Name": "Bailey Graham",
+    "Enrollment Number": 35,
+    "Class": 6
+  },
+  {
+    "Email": "Lloyd.Gleichner@van.co.uk",
+    "Full Name": "Hattie Quitzon V",
+    "Enrollment Number": 36,
+    "Class": 7
+  },
+  {
+    "Email": "Ronaldo_Gleason@hanna.name",
+    "Full Name": "Abbey Greenfelder",
+    "Enrollment Number": 37,
+    "Class": 7
+  },
+  {
+    "Email": "Zella@lindsay.ca",
+    "Full Name": "Dave Reynolds",
+    "Enrollment Number": 38,
+    "Class": 7
+  },
+  {
+    "Email": "Narciso_Kovacek@gussie.me",
+    "Full Name": "Amir Howe IV",
+    "Enrollment Number": 39,
+    "Class": 7
+  },
+  {
+    "Email": "Coy_Abernathy@joy.ca",
+    "Full Name": "Delaney Luettgen",
+    "Enrollment Number": 40,
+    "Class": 7
+  },
+  {
+    "Email": "Kameron_Morissette@esteban.tv",
+    "Full Name": "Emelie Doyle",
+    "Enrollment Number": 41,
+    "Class": 7
+  },
+  {
+    "Email": "Weston@mariano.co.uk",
+    "Full Name": "Israel Wiegand I",
+    "Enrollment Number": 42,
+    "Class": 7
+  },
+  {
+    "Email": "Elissa_Kuhic@josianne.org",
+    "Full Name": "Velda Armstrong",
+    "Enrollment Number": 43,
+    "Class": 8
+  },
+  {
+    "Email": "Alvena_Walsh@reid.me",
+    "Full Name": "Anahi Ernser",
+    "Enrollment Number": 44,
+    "Class": 8
+  },
+  {
+    "Email": "Macie.Bosco@grant.name",
+    "Full Name": "Alphonso Robel",
+    "Enrollment Number": 45,
+    "Class": 8
+  },
+  {
+    "Email": "Velda@dejah.ca",
+    "Full Name": "Norwood Doyle PhD",
+    "Enrollment Number": 46,
+    "Class": 8
+  },
+  {
+    "Email": "Katelin@kiel.com",
+    "Full Name": "Mary Spinka",
+    "Enrollment Number": 47,
+    "Class": 8
+  },
+  {
+    "Email": "Lee_Ullrich@buddy.biz",
+    "Full Name": "Mazie Hackett Sr.",
+    "Enrollment Number": 48,
+    "Class": 8
+  },
+  {
+    "Email": "Gerald.Crist@bernardo.biz",
+    "Full Name": "Kristopher Gorczany IV",
+    "Enrollment Number": 49,
+    "Class": 8
+  },
+  {
+    "Email": "Deon_DuBuque@dave.tv",
+    "Full Name": "Rollin Nicolas",
+    "Enrollment Number": 50,
+    "Class": 9
+  },
+  {
+    "Email": "Elvera@terrill.ca",
+    "Full Name": "Jaida Osinski",
+    "Enrollment Number": 51,
+    "Class": 9
+  },
+  {
+    "Email": "Nayeli@jennings.ca",
+    "Full Name": "Elfrieda Schowalter",
+    "Enrollment Number": 52,
+    "Class": 9
+  },
+  {
+    "Email": "Tanner@margaretta.tv",
+    "Full Name": "Tressie Schmeler",
+    "Enrollment Number": 53,
+    "Class": 9
+  },
+  {
+    "Email": "Roscoe@autumn.org",
+    "Full Name": "Ruthie Herzog",
+    "Enrollment Number": 54,
+    "Class": 9
+  },
+  {
+    "Email": "Virginie_Mitchell@citlalli.us",
+    "Full Name": "Dan Bernier",
+    "Enrollment Number": 55,
+    "Class": 9
+  },
+  {
+    "Email": "Judd_Kertzmann@kale.biz",
+    "Full Name": "Weston Graham II",
+    "Enrollment Number": 56,
+    "Class": 9
+  },
+  {
+    "Email": "Jeramie.Wehner@dedrick.ca",
+    "Full Name": "Neva Kshlerin",
+    "Enrollment Number": 57,
+    "Class": 10
+  },
+  {
+    "Email": "Layne_Rice@adaline.us",
+    "Full Name": "Susana Donnelly",
+    "Enrollment Number": 58,
+    "Class": 10
+  },
+  {
+    "Email": "Elsie@angel.biz",
+    "Full Name": "Shania Heaney",
+    "Enrollment Number": 59,
+    "Class": 10
+  },
+  {
+    "Email": "Judge@tracey.info",
+    "Full Name": "Adelia Pagac",
+    "Enrollment Number": 60,
+    "Class": 10
+  },
+  {
+    "Email": "Tanya_Gorczany@darius.me",
+    "Full Name": "Khalid D'Amore",
+    "Enrollment Number": 61,
+    "Class": 10
+  },
+  {
+    "Email": "Jonas@monserrat.org",
+    "Full Name": "Jan Moen",
+    "Enrollment Number": 62,
+    "Class": 10
+  },
+  {
+    "Email": "Verona_Gleason@therese.name",
+    "Full Name": "Sienna Kessler",
+    "Enrollment Number": 63,
+    "Class": 10
+  },
+  {
+    "Email": "Ruth.Waelchi@neal.tv",
+    "Full Name": "Chadrick Bradtke",
+    "Enrollment Number": 64,
+    "Class": 10
+  },
+  {
+    "Email": "Patience@otho.biz",
+    "Full Name": "Trevion Mayer",
+    "Enrollment Number": 65,
+    "Class": 11
+  },
+  {
+    "Email": "Deon@madisen.ca",
+    "Full Name": "Garett Gusikowski Sr.",
+    "Enrollment Number": 66,
+    "Class": 11
+  },
+  {
+    "Email": "Nettie@dashawn.us",
+    "Full Name": "Miss Jose Moore",
+    "Enrollment Number": 67,
+    "Class": 11
+  },
+  {
+    "Email": "Audreanne@zul.com",
+    "Full Name": "Carolanne Rath",
+    "Enrollment Number": 68,
+    "Class": 11
+  },
+  {
+    "Email": "Leonel.Lemke@novella.name",
+    "Full Name": "Reese Walker",
+    "Enrollment Number": 69,
+    "Class": 11
+  },
+  {
+    "Email": "Nathan@maryam.info",
+    "Full Name": "Maude Bauch",
+    "Enrollment Number": 70,
+    "Class": 11
+  },
+  {
+    "Email": "Eleazar_Lesch@maria.me",
+    "Full Name": "Raymond Langworth",
+    "Enrollment Number": 71,
+    "Class": 11
+  },
+  {
+    "Email": "Nels@leonor.com",
+    "Full Name": "Travon Mohr",
+    "Enrollment Number": 72,
+    "Class": 12
+  },
+  {
+    "Email": "Mariane@trever.biz",
+    "Full Name": "Ms. Keara Hoppe",
+    "Enrollment Number": 73,
+    "Class": 12
+  },
+  {
+    "Email": "Anita_Mayer@horacio.tv",
+    "Full Name": "Dr. Earnestine Dietrich",
+    "Enrollment Number": 74,
+    "Class": 12
+  },
+  {
+    "Email": "Georgianna_Jast@lauryn.net",
+    "Full Name": "Russell Prohaska",
+    "Enrollment Number": 75,
+    "Class": 12
+  },
+  {
+    "Email": "Columbus@cleora.info",
+    "Full Name": "Miss Maurine Abshire",
+    "Enrollment Number": 76,
+    "Class": 12
+  },
+  {
+    "Email": "Romaine@eugene.co.uk",
+    "Full Name": "Breana West",
+    "Enrollment Number": 77,
+    "Class": 12
+  },
+  {
+    "Email": "Jackie.Homenick@ward.io",
+    "Full Name": "Susana Wiegand",
+    "Enrollment Number": 78,
+    "Class": 12
+  },
+  {
+    "Email": "Augustine@eleanore.info",
+    "Full Name": "Lempi Feest",
+    "Enrollment Number": 79,
+    "Class": 12
+  }
+]

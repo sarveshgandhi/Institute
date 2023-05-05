@@ -9,6 +9,7 @@ import project.exception.CustomException;
 import project.mapper.StudentMapper;
 import project.model.Student;
 import project.respository.StudentRepository;
+import project.validator.JsonValidator;
 
 import java.io.IOException;
 import java.util.List;
@@ -16,7 +17,6 @@ import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
 import static java.util.Objects.isNull;
-import static java.util.Objects.nonNull;
 import static org.springframework.util.ObjectUtils.isEmpty;
 
 @Service
@@ -24,16 +24,19 @@ public class StudentService {
 
     private final StudentMapper studentMapper;
     private final StudentRepository studentRepository;
+    private final JsonValidator jsonValidator;
 
     @Autowired
     public StudentService(StudentMapper studentMapper,
-                          StudentRepository studentRepository) {
+                          StudentRepository studentRepository,
+                          JsonValidator jsonValidator) {
         this.studentMapper = studentMapper;
         this.studentRepository = studentRepository;
+        this.jsonValidator = jsonValidator;
     }
 
     public String addBatchStudentsAsJson(MultipartFile file) {
-        validateFileUpload(file);
+        jsonValidator.validateFileUpload(file);
         JSONArray jsonUpload;
         try {
             jsonUpload = new JSONArray(new String(file.getBytes()));
@@ -41,7 +44,7 @@ public class StudentService {
             throw new CustomException(e.getMessage());
         }
 
-        validateJsonStructure(jsonUpload);
+        validateJsonStructureForStudent(jsonUpload);
 
         List<Student> newStudents = studentMapper.map(jsonUpload);
         studentRepository.addAll(newStudents);
@@ -78,7 +81,7 @@ public class StudentService {
         }
     }
 
-    private void validateJsonStructure(JSONArray jsonUpload) {
+    private void validateJsonStructureForStudent(JSONArray jsonUpload) {
         IntStream.range(0, jsonUpload.length())
                 .boxed()
                 .forEach(index -> {
@@ -93,16 +96,6 @@ public class StudentService {
                 });
     }
 
-    private void validateFileUpload(MultipartFile file) {
-
-        if (nonNull(file.getOriginalFilename()) && !file.getOriginalFilename().endsWith(".json")) {
-            throw new CustomException("File format not supported");
-        }
-
-        if (file.isEmpty()) {
-            throw new CustomException("File uploaded was found empty");
-        }
-    }
 
     private void validateInput(Long className) {
         if (isEmpty(className)) {
