@@ -18,5 +18,6 @@ public class JsonValidator {
         if (file.isEmpty()) {
             throw new CustomException("File uploaded was found empty");
         }
+
     }
 }
