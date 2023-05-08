@@ -73,7 +73,8 @@ public class StudentService {
     }
 
     private void validateStudent(Student selectedStudent) {
-        if (isNull(selectedStudent) || isNull(selectedStudent.getEnrollmentNumber())) {
+        if (isNull(selectedStudent) || isNull(selectedStudent.getEnrollmentNumber())
+                || isNull(selectedStudent.getAdmissionNumber())) {
             throw new CustomException("Given student is not valid");
         }
         if (isNull(selectedStudent.getClazz())) {

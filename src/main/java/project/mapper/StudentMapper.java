@@ -24,6 +24,7 @@ public class StudentMapper {
     private Student mapToStudent(JSONObject jsonObject) {
         return Student.builder()
                 .enrollmentNumber(jsonObject.getLong("Enrollment Number"))
+                .admissionNumber(jsonObject.getLong("Admission Number"))
                 .fullName(jsonObject.getString("Full Name"))
                 .clazz(String.valueOf(jsonObject.getLong("Class")))
                 .email(jsonObject.getString("Email"))

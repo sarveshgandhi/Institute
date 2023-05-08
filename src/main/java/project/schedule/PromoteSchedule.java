@@ -19,7 +19,7 @@ public class PromoteSchedule {
 
     @Scheduled(
             fixedRate = 31536000000L //(365L * 24 * 60 * 60 * 1000) every year in millis
-//            cron = "*/10 * * * * *" // to test
+            // cron = "*/10 * * * * *" // to test
     )
     public String run() {
         log.info("Students promoted by scheduled job");

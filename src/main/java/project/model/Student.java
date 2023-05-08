@@ -14,6 +14,7 @@ public class Student {
     private String fullName;
     private LocalDateTime createdAt;
     private String email;
+    private Long admissionNumber;
 
     @JsonProperty("class")
     private String clazz;
