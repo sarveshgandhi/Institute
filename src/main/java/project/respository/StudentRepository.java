@@ -13,8 +13,17 @@ import java.util.stream.Collectors;
 public class StudentRepository {
 
     private static final AtomicReference<List<Student>> school = new AtomicReference<>(new ArrayList<>());
+    private static Long admissions = 0L;
 
-    public void addAll(List<Student> students) {
+    public void addAll(List<Student> requestedStudents) {
+        List<Student> students;
+        synchronized (admissions) {
+             students = requestedStudents.stream()
+                    .map(student -> student.toBuilder()
+                            .admissionNumber(++admissions)
+                            .build())
+                    .collect(Collectors.toList());
+        }
         school.get().addAll(students);
     }
 
