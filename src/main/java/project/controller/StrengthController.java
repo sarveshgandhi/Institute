@@ -1,6 +1,8 @@
 package project.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,12 +24,12 @@ public class StrengthController {
     }
 
     @GetMapping("/school")
-    public List<Student> getAllStudents() {
-        return studentService.getAllStudents();
+    public ResponseEntity<List<Student>> getAllStudents() {
+        return new ResponseEntity<>(studentService.getAllStudents(), HttpStatus.OK);
     }
 
     @GetMapping("/class/{className}")
-    public List<Student> getStudentsFromClass(@PathVariable("className") Long className) {
-        return studentService.getStudentsFromClass(className);
+    public ResponseEntity<List<Student>> getStudentsFromClass(@PathVariable("className") Long className) {
+        return new ResponseEntity<>(studentService.getStudentsFromClass(className), HttpStatus.OK);
     }
 }

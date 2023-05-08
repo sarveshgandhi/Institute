@@ -2,6 +2,8 @@ package project.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import project.model.Student;
@@ -22,17 +24,17 @@ public class AdmissionsController {
     }
 
     @PostMapping("/admitBatch")
-    public String addAllStudents(@RequestParam("file") MultipartFile file) {
-        return studentService.addBatchStudentsAsJson(file);
+    public ResponseEntity<String> addAllStudents(@RequestParam("file") MultipartFile file) {
+        return new ResponseEntity<>(studentService.addBatchStudentsAsJson(file), HttpStatus.OK);
     }
 
     @PostMapping("/admit")
-    public String admitStudent(@RequestBody Student student) {
-        return studentService.addStudent(student);
+    public ResponseEntity<String> admitStudent(@RequestBody Student student) {
+        return new ResponseEntity<>(studentService.addStudent(student), HttpStatus.OK);
     }
 
     @GetMapping("/promote")
-    public String promote() {
-        return promoteSchedule.run();
+    public ResponseEntity<String> promote() {
+        return new ResponseEntity<>(promoteSchedule.run(), HttpStatus.OK);
     }
 }
