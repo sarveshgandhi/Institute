@@ -2,11 +2,12 @@ package project.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
-import project.model.Student;
 import project.schedule.PromoteSchedule;
 import project.service.StudentService;
 
@@ -25,16 +26,11 @@ public class AdmissionsController {
 
     @PostMapping("/admitBatch")
     public ResponseEntity<String> addAllStudents(@RequestParam("file") MultipartFile file) {
-        return new ResponseEntity<>(studentService.addBatchStudentsAsJson(file), HttpStatus.OK);
-    }
-
-    @PostMapping("/admit")
-    public ResponseEntity<String> admitStudent(@RequestBody Student student) {
-        return new ResponseEntity<>(studentService.addStudent(student), HttpStatus.OK);
+        return ResponseEntity.ok(studentService.addBatchStudentsAsJson(file));
     }
 
     @GetMapping("/promote")
     public ResponseEntity<String> promote() {
-        return new ResponseEntity<>(promoteSchedule.run(), HttpStatus.OK);
+        return ResponseEntity.ok(promoteSchedule.run());
     }
 }
