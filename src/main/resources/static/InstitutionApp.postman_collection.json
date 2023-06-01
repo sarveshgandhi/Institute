@@ -59,14 +59,14 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{INSTITUTE_PROD}}/strength/class/2",
+							"raw": "{{INSTITUTE_PROD}}/strength/class/6",
 							"host": [
 								"{{INSTITUTE_PROD}}"
 							],
 							"path": [
 								"strength",
 								"class",
-								"2"
+								"6"
 							]
 						}
 					},

@@ -12,6 +12,7 @@ import project.respository.StudentRepository;
 import project.validator.JsonValidator;
 
 import java.io.IOException;
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -47,19 +48,19 @@ public class StudentService {
         validateJsonStructureForStudent(jsonUpload);
 
         List<Student> newStudents = studentMapper.map(jsonUpload);
-        studentRepository.addAll(newStudents);
+        studentRepository.saveAll(newStudents);
         return String.format("Successfully admitted %s students to school, total strength = %s",
-                newStudents.size(), studentRepository.getStrength());
+                newStudents.size(), getAllStudents().size());
     }
 
     public List<Student> getAllStudents() {
-        return studentRepository.getAllStudents();
+        return (List<Student>) studentRepository.findAll();
     }
 
     public List<Student> getStudentsFromClass(Long className) {
         validateInput(className);
         String clazz = className.toString();
-        List<Student> allStudents = studentRepository.getAllStudents();
+        List<Student> allStudents = getAllStudents();
         return allStudents
                 .stream()
                 .filter(student -> clazz.equals(student.getClazz()))
@@ -68,13 +69,13 @@ public class StudentService {
 
     public String addStudent(Student student) {
         validateStudent(student);
-        studentRepository.add(student);
+        student.setCreatedAt(LocalDateTime.now());
+        studentRepository.save(student);
         return "Student added successfully";
     }
 
     private void validateStudent(Student selectedStudent) {
-        if (isNull(selectedStudent) || isNull(selectedStudent.getEnrollmentNumber())
-                || isNull(selectedStudent.getAdmissionNumber())) {
+        if (isNull(selectedStudent) || isNull(selectedStudent.getEnrollmentNumber())) {
             throw new CustomException("Given student is not valid");
         }
         if (isNull(selectedStudent.getClazz())) {
